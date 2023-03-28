@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            width: 400px;
+            height: 200px;
+            margin: 50px;
+            background-color: gray;
+            color: white;
+            padding: 30px;
+            overflow-y: scroll;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe adipisci dolores ducimus neque enim nulla debitis recusandae sequi quaerat qui. Explicabo nam, unde, cum magnam incidunt dignissimos repudiandae, fugit vel non doloremque a. Debitis aut, accusantium accusamus error quasi eligendi hic distinctio ea id nobis non modi nesciunt impedit aliquid voluptates ipsum nisi doloremque numquam illum omnis at reprehenderit voluptatibus consectetur? Laboriosam, esse! Reiciendis numquam repellendus aperiam, sapiente natus perspiciatis amet tenetur iste cupiditate, ipsam iusto? Perferendis tenetur iusto tempora ab voluptate, minima doloremque soluta aliquid rerum? Tenetur fuga aut expedita quis! Hic rerum asperiores necessitatibus? Sint, architecto velit atque, nisi ullam perspiciatis ipsam iure aliquam repudiandae cupiditate eum et? Adipisci fugit earum labore repellendus delectus dignissimos eum nisi. Quisquam error repellat quo?
+    </div>
+
+    <script>
+
+        console.log(content)
+        console.log(window.getComputedStyle(content).getPropertyValue("margin-top"))
+
+        content.addEventListener("click" , (e)=>{
+            console.log(e.clientX)
+        })
+
+    </script>
+</body>
+</html>

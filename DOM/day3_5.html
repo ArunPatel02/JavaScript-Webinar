@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="form" onsubmit="submitForm(event)">
+        <label for=" name">enter your Name</label>
+        <input type="text" id="name" name="name" onchange="fieldChange(event)">
+        <br>
+        <br>
+        <label for="age">enter your age</label>
+        <input type="number" name="age" onchange="fieldChange(event)">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+        console.log(form.elements)
+
+        // evemtListener
+        //  const namefield = document.getElementById("name")
+
+        // namefield.addEventListener("change" , (e)=>{
+        //     console.log(e.target.name , e.target.value)
+        // })
+
+        const fieldChange = (e)=>{
+            console.log(e.target.name , e.target.value)
+        }
+
+        const submitForm = (e)=>{
+            e.preventDefault()
+            console.log("submiting the form")
+        }
+
+    </script>
+
+</body>
+
+</html>
