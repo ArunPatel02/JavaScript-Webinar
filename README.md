@@ -1,4 +1,4 @@
-# Course Material and FAQ for my Complete JavaScript Course
+# Course Material and FAQ for my Complete JavaScript workshop
 
 This branch of the repo contains starter files and final code for all **topics that we cover during workshop**.
 
